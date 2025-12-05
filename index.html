@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 3-Month Locked In Program | Transform Your Physique</title>
+    <meta name="description" content="The ultimate fitness and mindset blueprint for young men aged 15-21. Build muscle, lose fat, and unlock your confidence.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+        }
+        /* Dark overlay on hero image for better text readability */
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+        }
+        .cta-btn {
+            transition: all 0.3s ease;
+        }
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(239, 68, 68, 0.5);
+        }
+        /* Smooth fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        /* Scribbled Underline Style */
+        .scribble-underline {
+            display: inline-block;
+            position: relative;
+            padding-bottom: 0.2em; /* Space for the scribble */
+        }
+
+        .scribble-underline::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.15em;
+            width: 100%;
+            height: 0.35em;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M0,10 C5,5 15,15 20,10 C25,5 35,15 40,10 C45,5 55,15 60,10 C65,5 75,15 80,10 C85,5 95,15 100,10 C105,5 115,15 120,10 C125,5 135,15 140,10 C145,5 155,15 160,10 C165,5 175,15 180,10 C185,5 195,15 200,10" stroke="%23dc2626" stroke-width="2" fill="none" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-100 antialiased leading-relaxed selection:bg-red-600 selection:text-white">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-gray-950/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <span class="text-2xl font-black text-white tracking-tighter uppercase">Locked<span class="text-red-600">In</span>.</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#program" class="text-gray-300 hover:text-white text-sm font-medium uppercase tracking-wide transition">The Program</a>
+                    <a href="#results" class="text-gray-300 hover:text-white text-sm font-medium uppercase tracking-wide transition">Results</a>
+                    <a href="#pricing" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded font-bold text-sm uppercase tracking-wide transition shadow-lg shadow-red-900/20">Get Access</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <a href="#pricing" class="text-red-500 font-bold text-sm uppercase">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-bg min-h-screen flex items-center justify-center pt-16 pb-32 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 text-center animate-fade-in">
+            <div class="inline-block px-3 py-1 mb-6 border border-red-600/30 rounded-full bg-red-600/10 backdrop-blur-sm">
+                <p class="text-red-500 font-bold tracking-widest uppercase text-xs md:text-sm">For Men Ages 15–21 Only</p>
+            </div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 uppercase tracking-tight leading-none drop-shadow-2xl">
+                Stop Guessing.<br>
+                Start <span class="text-red-600 text-glow">Transforming.</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-10 max-w-2xl mx-auto font-light leading-normal">
+                The no-BS blueprint to building a respected physique, mastering your diet, and unlocking masculine confidence in 90 days.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#pricing" class="cta-btn bg-red-600 text-white px-8 py-4 rounded font-bold text-lg uppercase tracking-wide">
+                    Join The Program
+                </a>
+                <a href="#program" class="px-8 py-4 rounded border border-gray-600 hover:border-white text-gray-300 hover:text-white font-bold text-lg uppercase tracking-wide transition backdrop-blur-sm bg-black/20">
+                    Learn More
+                </a>
+            </div>
+            <div class="mt-8 flex justify-center items-center space-x-4 text-sm text-gray-400">
+                <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Instant Access</span>
+                <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-green-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg> Mobile Friendly</span>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
+            <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM (PAIN & AGITATION) -->
+    <section class="py-24 bg-gray-900 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight">You’re Putting in Work,<br>But You’re Still Stuck.</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pain Point 1 -->
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-red-500/30 transition duration-300">
+                    <div class="text-red-500 mb-6 bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">The "Skinny Fat" Trap</h3>
+                    <p class="text-gray-400 leading-relaxed">You eat whatever, lift randomly, and hope for the best. But you either gain just fat or stay skinny. You don't know if you should "bulk" or "cut," so you spin your wheels for months.</p>
+                </div>
+                <!-- Pain Point 2 -->
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-red-500/30 transition duration-300">
+                    <div class="text-red-500 mb-6 bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Student Time Constraints</h3>
+                    <p class="text-gray-400 leading-relaxed">Between school, homework, and a social life, you don't have 2 hours a day to waste on complicated routines. You need efficiency, not outdated gym-bro science.</p>
+                </div>
+                <!-- Pain Point 3 -->
+                <div class="bg-gray-800/50 p-8 rounded-2xl border border-gray-700 hover:border-red-500/30 transition duration-300">
+                    <div class="text-red-500 mb-6 bg-gray-800 w-16 h-16 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Zero Clear Direction</h3>
+                    <p class="text-gray-400 leading-relaxed">TikTok influencers give conflicting advice. One says "Keto," the other says "Carbs." You end up overwhelmed, doing nothing, and watching your confidence fade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE SOLUTION -->
+    <section id="program" class="py-24 bg-black relative">
+        <!-- Background decoration -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-red-900/5 blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <div>
+                <span class="inline-block text-red-600 font-bold uppercase tracking-wider text-sm border-b border-red-600 pb-1 mb-6">The Solution</span>
+                <h2 class="text-4xl md:text-6xl font-black text-white mb-8"><span class="scribble-underline">Enter:</span> The 3-Month <span class="text-red-600">Locked In</span> Program</h2>
+                <p class="text-gray-300 text-lg mb-12 leading-relaxed max-w-2xl mx-auto">
+                    This isn't just a PDF workout. It’s a complete restructuring of your habits, training, and mindset. Designed specifically for young men who want to stop being "average" and start commanding respect.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                    <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800">
+                        <div class="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center mb-4">
+                            <span class="text-green-500 font-bold">✓</span>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-2">For Skinny Guys</h4>
+                        <p class="text-gray-400 text-sm">A roadmap to packing on size and functional strength without getting fat.</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800">
+                        <div class="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center mb-4">
+                            <span class="text-green-500 font-bold">✓</span>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-2">For Bigger Guys</h4>
+                        <p class="text-gray-400 text-sm">Strategies to lean out, reveal muscle definition, and build athleticism.</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-6 rounded-xl border border-gray-800">
+                        <div class="w-8 h-8 rounded-full bg-green-500/20 flex items-center justify-center mb-4">
+                            <span class="text-green-500 font-bold">✓</span>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-2">For Everyone</h4>
+                        <p class="text-gray-400 text-sm">A foundation of discipline that translates to grades, money, and life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT'S INSIDE (BREAKDOWN) -->
+    <section class="py-24 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-black text-white uppercase">The Core Modules</h2>
+                <p class="text-gray-400 mt-4 text-lg">Everything you need to succeed. Nothing you don't.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Module 1 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-600/50 transition duration-300 group">
+                    <div class="flex items-baseline justify-between mb-6">
+                        <h3 class="text-3xl font-black text-white italic">TRAINING</h3>
+                        <span class="text-6xl font-black text-gray-700 group-hover:text-red-900/30 transition">01</span>
+                    </div>
+                    <h4 class="text-xl text-red-500 font-bold mb-3">Progressive Overload Blueprint</h4>
+                    <p class="text-gray-300 mb-6 leading-relaxed">A structured 12-week lifting plan tailored to your experience level. No confusing supersets—just raw, effective compound movements designed to build a V-taper physique.</p>
+                    <div class="bg-gray-900/50 p-4 rounded-lg">
+                        <ul class="text-sm text-gray-400 grid grid-cols-2 gap-3">
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> 3, 4, & 5-day splits</li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> Form cues & safety</li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> Cardio protocols</li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> Deload week structure</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-red-600/50 transition duration-300 group">
+                    <div class="flex items-baseline justify-between mb-6">
+                        <h3 class="text-3xl font-black text-white italic">NUTRITION</h3>
+                        <span class="text-6xl font-black text-gray-700 group-hover:text-red-900/30 transition">02</span>
+                    </div>
+                    <h4 class="text-xl text-red-500 font-bold mb-3">The Fuel System</h4>
+                    <p class="text-gray-300 mb-6 leading-relaxed">Nutrition is 80% of the game. We simplify it. Learn exactly how to calculate your macros for your goals (cutting or bulking) without giving up all the foods you like.</p>
+                    <div class="bg-gray-900/50 p-4 rounded-lg">
+                        <ul class="text-sm text-gray-400 grid grid-cols-2 gap-3">
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> "Skinny Guy" Bulk</li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> "Big Guy" Cut</li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> MyFitnessPal Guide</li>
+                            <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> Cheap Protein Hacks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONUSES SECTION -->
+    <section class="py-24 bg-gradient-to-b from-gray-900 to-black border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-16">Plus: The "Young King" Bonus Stack <br><span class="text-red-600 text-2xl uppercase tracking-wider block mt-2">(Tier 3 Exclusive)</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Bonus 1 -->
+                <div class="bg-gray-800 p-8 rounded-xl text-center border border-gray-700 hover:bg-gray-800/80 transition">
+                    <div class="inline-block bg-red-600/10 text-red-500 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">Bonus #1</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Style & Grooming 101</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">How to dress well on a budget, haircut guides, and skincare basics. Look as good as you lift.</p>
+                </div>
+                <!-- Bonus 2 -->
+                <div class="bg-gray-800 p-8 rounded-xl text-center border border-gray-700 hover:bg-gray-800/80 transition">
+                    <div class="inline-block bg-red-600/10 text-red-500 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">Bonus #2</div>
+                    <h3 class="text-xl font-bold text-white mb-3">The First $ Online</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">A realistic primer on digital skills you can learn now to start making money alongside your studies.</p>
+                </div>
+                <!-- Bonus 3 -->
+                <div class="bg-gray-800 p-8 rounded-xl text-center border border-gray-700 hover:bg-gray-800/80 transition">
+                    <div class="inline-block bg-red-600/10 text-red-500 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4">Bonus #3</div>
+                    <h3 class="text-xl font-bold text-white mb-3">Unbreakable Confidence</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Mindset frames to stop caring what others think and start leading your own life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS PLACEHOLDER -->
+    <section id="results" class="py-24 bg-gray-900">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-center text-3xl md:text-4xl font-black text-white mb-12 uppercase">The Results Speak For Themselves</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Placeholder Testimonial 1 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gray-600 rounded-full mr-4 border-2 border-red-500"></div> <!-- Placeholder Avatar -->
+                        <div>
+                            <p class="text-white font-bold text-lg">Liam, 17</p>
+                            <p class="text-xs text-red-400 font-bold uppercase tracking-wider">Student</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                    <p class="text-gray-300 italic text-lg leading-relaxed">"I was always the skinny kid in class. I tried eating more but just felt sick. The nutrition guide in this program actually made sense. Put on 12lbs in 3 months."</p>
+                </div>
+                 <!-- Placeholder Testimonial 2 -->
+                 <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-gray-600 rounded-full mr-4 border-2 border-red-500"></div> <!-- Placeholder Avatar -->
+                        <div>
+                            <p class="text-white font-bold text-lg">Marcus, 19</p>
+                            <p class="text-xs text-red-400 font-bold uppercase tracking-wider">College Freshman</p>
+                        </div>
+                    </div>
+                    <div class="flex text-yellow-500 mb-4">★★★★★</div>
+                    <p class="text-gray-300 italic text-lg leading-relaxed">"This isn't just about gym. The mindset stuff really helped me get focused in school too. Lost 15lbs of fat and I actually see abs now."</p>
+                </div>
+            </div>
+            <p class="text-center text-gray-500 text-xs mt-8">Note: These are representative outcomes based on program adherence. Results vary based on effort.</p>
+        </div>
+    </section>
+
+    <!-- PRICING TIERS -->
+    <section id="pricing" class="py-24 bg-black relative">
+        <div class="max-w-7xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-white uppercase">Choose Your Path</h2>
+                <p class="text-gray-400 mt-4 text-lg">Invest in yourself for less than the price of a video game.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+                
+                <!-- TIER 1 -->
+                <div class="bg-gray-900 p-8 rounded-2xl border border-gray-800 hover:border-gray-600 transition duration-300">
+                    <h3 class="text-xl font-bold text-white uppercase tracking-wider mb-2">The Starter</h3>
+                    <div class="my-6">
+                        <span class="text-4xl font-bold text-white">$27</span>
+                        <span class="text-gray-500 text-sm font-medium">/one-time</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-8 h-10">Just the workout plan. Good if you already know how to eat.</p>
+                    <a href="https://whop.com/checkout/plan_qXiP0f6I4kVX5" class="block w-full bg-gray-800 hover:bg-gray-700 text-white text-center py-4 rounded-lg font-bold uppercase text-sm transition border border-gray-700 tracking-wide">Get Started</a>
+                    <ul class="mt-8 space-y-4 text-sm text-gray-300">
+                        <li class="flex items-center"><span class="text-white mr-3 font-bold">✓</span> 12-Week Workout Plan</li>
+                        <li class="flex items-center"><span class="text-white mr-3 font-bold">✓</span> Video Exercise Library</li>
+                        <li class="flex items-center text-gray-600"><span class="mr-3 font-bold">✕</span> No Nutrition Guide</li>
+                        <li class="flex items-center text-gray-600"><span class="mr-3 font-bold">✕</span> No Bonuses</li>
+                    </ul>
+                </div>
+
+                <!-- TIER 2 -->
+                <div class="bg-gray-800 p-8 rounded-2xl border-2 border-gray-700 relative transform md:-translate-y-4 transition hover:border-white">
+                    <div class="absolute top-0 right-0 bg-gray-700 text-xs text-white px-3 py-1 rounded-bl-lg rounded-tr-lg font-bold uppercase tracking-wide">Most Popular</div>
+                    <h3 class="text-xl font-bold text-white uppercase tracking-wider mb-2">The Athlete</h3>
+                    <div class="my-6">
+                        <span class="text-5xl font-bold text-white">$47</span>
+                        <span class="text-gray-500 text-sm font-medium">/one-time</span>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-8 h-10">Training + Nutrition. The complete fitness package.</p>
+                    <a href="#" class="block w-full bg-white hover:bg-gray-200 text-black text-center py-4 rounded-lg font-bold uppercase text-sm transition tracking-wide shadow-lg">Get Access</a>
+                    <ul class="mt-8 space-y-4 text-sm text-gray-300">
+                        <li class="flex items-center"><span class="text-green-500 mr-3 font-bold">✓</span> 12-Week Workout Plan</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3 font-bold">✓</span> Video Exercise Library</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3 font-bold">✓</span> <strong>Full Nutrition Guide</strong></li>
+                        <li class="flex items-center"><span class="text-green-500 mr-3 font-bold">✓</span> MyFitnessPal Guide</li>
+                        <li class="flex items-center text-gray-600"><span class="mr-3 font-bold">✕</span> No Lifestyle Bonuses</li>
+                    </ul>
+                </div>
+
+                <!-- TIER 3 (BEST VALUE) -->
+                <div class="bg-gradient-to-b from-gray-900 to-black p-8 rounded-2xl border-2 border-red-600 shadow-2xl shadow-red-900/40 transform md:-translate-y-8 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-red-600/5 group-hover:bg-red-600/10 transition"></div>
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white px-6 py-1.5 rounded-full font-bold text-xs tracking-widest uppercase whitespace-nowrap shadow-lg z-10">Best Value</div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-black text-red-500 uppercase tracking-wider mb-2">Locked In Mode</h3>
+                        <div class="my-6">
+                            <span class="text-6xl font-black text-white">$67</span>
+                            <span class="text-gray-500 text-sm font-medium">/one-time</span>
+                        </div>
+                        <p class="text-gray-300 text-sm mb-8 h-10">The full transformation. Fitness, Money, Style, Mindset.</p>
+                        <a href="#" class="cta-btn block w-full bg-red-600 hover:bg-red-700 text-white text-center py-4 rounded-lg font-bold uppercase text-sm transition shadow-lg shadow-red-900/50 tracking-wide">Become Locked In</a>
+                        <ul class="mt-8 space-y-4 text-sm text-gray-200">
+                            <li class="flex items-center"><span class="text-red-500 mr-3 font-bold">✓</span> <strong>Everything in Athlete</strong></li>
+                            <li class="flex items-center"><span class="text-red-500 mr-3 font-bold">✓</span> Style & Grooming Guide</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-3 font-bold">✓</span> "First $ Online" Module</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-3 font-bold">✓</span> Confidence & Frame Book</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-3 font-bold">✓</span> Priority Email Support</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GUARANTEE -->
+    <section class="py-20 bg-gray-900">
+        <div class="max-w-3xl mx-auto px-4 text-center">
+            <div class="inline-block p-4 rounded-full border border-gray-700 bg-gray-800 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-white mb-6">30-Day "Action Taker" Guarantee</h2>
+            <p class="text-gray-400 mb-8 text-lg leading-relaxed">
+                I want you to get results. If you follow the program, track your workouts, and don't see progress in the first 30 days, send me your logs and I will refund you 100%. <br><br>This is risk-free if you are willing to put in the work.
+            </p>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="py-24 bg-gray-950 text-center border-t border-gray-800">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-4xl md:text-5xl font-black text-white mb-6 uppercase">3 Months From Now...</h2>
+            <p class="text-xl text-gray-200 mb-10 leading-relaxed">
+                You can be in the exact same spot—confused, skinny-fat, and frustrated. OR, you can be 12 weeks deep into the best shape of your life with a roadmap for the future.
+            </p>
+            <a href="#pricing" class="inline-block bg-red-600 text-white px-10 py-5 rounded-lg font-black text-xl uppercase tracking-wide hover:bg-red-700 transition shadow-2xl transform hover:-translate-y-1">
+                Start The Program
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-950 py-12 border-t border-gray-900">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <span class="text-2xl font-black text-gray-800 tracking-tighter uppercase mb-6 block">Locked<span class="text-red-900">In</span>.</span>
+            <p class="text-gray-600 text-sm mb-6">
+                &copy; 2023 Locked In Program. All Rights Reserved.
+            </p>
+            <div class="text-gray-800 text-xs max-w-2xl mx-auto leading-relaxed space-y-2">
+                <p><strong>Disclaimer:</strong> The content provided in this program is for informational purposes only and is not intended as medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Exercise and dietary changes involve risk.</p>
+                <p>Results vary depending on starting point, goals, and effort.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
