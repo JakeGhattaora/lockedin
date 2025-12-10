@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>The 3-Month Locked In Program | Transform Your Physique</title>
+    
     <meta name="description" content="The ultimate fitness and mindset blueprint for young men aged 15-21. Build muscle, lose fat, and unlock your confidence.">
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -63,6 +70,7 @@
             background-size: 100% 100%;
         }
     </style>
+
     <!-- Adding Microsoft Clarity tracking code -->
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
@@ -71,6 +79,7 @@
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "ops46iji9e");
     </script>
+
     <script>
         window.growthbook_config = {
           onInit: (gb) => {
@@ -91,22 +100,23 @@
     data-client-key="sdk-FIQEpqciIVjBnZYu"
     src="https://cdn.jsdelivr.net/npm/@growthbook/growthbook/dist/bundles/auto.min.js"
     ></script>
+
     <!-- Adding JS to swap variations -->
     <script>
         document.addEventListener("growthbookLoaded", () => {
-    const defaultHeadline = "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
-
-    const feature = window._growthbook?.getFeatureValue(
-        "headline_test1",
-        { value: defaultHeadline }
-    );
-
-    const el = document.getElementById("headline");
-    if (el && feature?.value) {
-        el.innerHTML = feature.value;
-    }
-    });
+          const defaultHeadline =
+            "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
+        
+          const headlineHTML = window._growthbook?.getFeatureValue(
+            "headline_test1",
+            defaultHeadline
+          );
+        
+          const el = document.getElementById("headline");
+          if (el) el.innerHTML = headlineHTML;
+        });
     </script>
+        
 </head>
 <body class="bg-gray-950 text-gray-100 antialiased leading-relaxed selection:bg-red-600 selection:text-white">
 
