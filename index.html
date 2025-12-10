@@ -103,11 +103,12 @@
 
     <!-- Adding JS to swap variations -->
     <script>
-        document.addEventListener("growthbookLoaded", () => {
+        window.growthbook_queue = window.growthbook_queue || [];
+        window.growthbook_queue.push((gb) => {
           const defaultHeadline =
             "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
         
-          const headlineHTML = window._growthbook?.getFeatureValue(
+          const headlineHTML = gb.getFeatureValue(
             "headline_test1",
             defaultHeadline
           );
@@ -116,6 +117,7 @@
           if (el) el.innerHTML = headlineHTML;
         });
     </script>
+        
         
 </head>
 <body class="bg-gray-950 text-gray-100 antialiased leading-relaxed selection:bg-red-600 selection:text-white">
