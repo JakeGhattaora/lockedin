@@ -135,16 +135,20 @@
                 Start <span class="text-red-600 text-glow">Transforming.</span>
             </h1>
             <!-- Adding JS to swap variations -->
+
             <script>
                 window.growthbook_queue = window.growthbook_queue || [];
                 window.growthbook_queue.push((gb) => {
-                  const defaultHeadline =
+    
+                const defaultHeadline =
                     "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
-                
-                  const headlineHTML = gb.getFeatureValue("headline_test1", defaultHeadline);
-                
-                  const el = document.getElementById("headline");
-                  if (el) el.innerHTML = headlineHTML;
+    
+                const feature = gb.getFeatureValue("headline_test1", { value: defaultHeadline });
+    
+                const headlineHTML = feature.value;
+    
+                const el = document.getElementById("headline");
+                if (el) el.innerHTML = headlineHTML;
                 });
             </script>
 
