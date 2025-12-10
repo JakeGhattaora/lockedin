@@ -134,23 +134,41 @@
                 Stop Guessing.<br>
                 Start <span class="text-red-600 text-glow">Transforming.</span>
             </h1>
+            
             <!-- Adding JS to swap variations -->
 
             <script>
+                // Create a global queue for GrowthBook if it doesn't already exist.
+                // This queue stores functions that will run once GrowthBook finishes loading.
                 window.growthbook_queue = window.growthbook_queue || [];
+            
+                // Push a function onto the GrowthBook queue.
+                // This function receives a GrowthBook instance (gb) when executed.
                 window.growthbook_queue.push((gb) => {
-    
-                const defaultHeadline =
-                    "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
-    
-                const feature = gb.getFeatureValue("headline_test1", { value: defaultHeadline });
-    
-                const headlineHTML = feature.value;
-    
-                const el = document.getElementById("headline");
-                if (el) el.innerHTML = headlineHTML;
+            
+                    // A fallback/default headline HTML string
+                    // (used if the feature flag doesn't override it).
+                    const defaultHeadline =
+                        "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
+            
+                    // Fetch the value of the feature flag "headline_test1".
+                    // If the flag doesn't exist, or the user isn't included in the experiment,
+                    // use the defaultHeadline as the fallback value.
+                    // GrowthBook returns an object with a "value" property.
+                    const feature = gb.getFeatureValue("headline_test1", { value: defaultHeadline });
+            
+                    // Extract the actual headline HTML string from the feature object.
+                    const headlineHTML = feature.value;
+            
+                    // Find the DOM element with id="headline".
+                    const el = document.getElementById("headline");
+            
+                    // If the element exists, replace its inner HTML with
+                    // whatever headline came from the feature flag.
+                    if (el) el.innerHTML = headlineHTML;
                 });
             </script>
+            
 
             <p class="text-lg md:text-2xl text-gray-300 mb-8 md:mb-10 max-w-2xl mx-auto font-light leading-normal">
                 The no-BS blueprint to building a respected physique, mastering your diet, and unlocking masculine confidence in 90 days.
