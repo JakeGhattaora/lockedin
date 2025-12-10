@@ -73,10 +73,14 @@
     </script>
     <script>
         window.growthbook_config = {
-          attributes: {
-            id: crypto.randomUUID()  // gives each visitor a stable random id
-          }
+          attributes: {}
         };
+        // Allow ?gbid override
+        const urlParams = new URLSearchParams(window.location.search);
+        const forcedId = urlParams.get("gbid");
+
+        // Use URL override if present, otherwise random uuid
+        window.growthbook_config.attributes.id = forcedId ?? crypto.randomUUID();
     </script>
     <!-- Adding SDK Webhook for GrowthBook -->
     <script async
