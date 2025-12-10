@@ -87,20 +87,19 @@
     <!-- Adding JS to swap variations -->
     <script>
         document.addEventListener("growthbookLoaded", () => {
-            // These should match your GrowthBook variations exactly
-            const defaultHeadline = `Stop Guessing.<br>Start <span class="text-red-600 text-glow">Transforming.</span>`;
-            
-            // Get the variation value from GrowthBook
-            const headlineHTML = window._growthbook?.getFeatureValue(
-                "headline_test",
-                defaultHeadline
-            );
-        
-            // Apply it to the headline element
-            const el = document.getElementById("headline");
-            if (el) el.innerHTML = headlineHTML;
-        });
-        </script>        
+    const defaultHeadline = "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
+
+    const feature = window._growthbook?.getFeatureValue(
+        "headline_test1",
+        { value: defaultHeadline }
+    );
+
+    const el = document.getElementById("headline");
+    if (el && feature?.value) {
+        el.innerHTML = feature.value;
+    }
+    });
+    </script>
 </head>
 <body class="bg-gray-950 text-gray-100 antialiased leading-relaxed selection:bg-red-600 selection:text-white">
 
