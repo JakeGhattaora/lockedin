@@ -100,25 +100,7 @@
     data-client-key="sdk-FIQEpqciIVjBnZYu"
     src="https://cdn.jsdelivr.net/npm/@growthbook/growthbook/dist/bundles/auto.min.js"
     ></script>
-
-    <!-- Adding JS to swap variations -->
-    <script>
-        window.growthbook_queue = window.growthbook_queue || [];
-        window.growthbook_queue.push((gb) => {
-          const defaultHeadline =
-            "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
-        
-          const headlineHTML = gb.getFeatureValue(
-            "headline_test1",
-            defaultHeadline
-          );
-        
-          const el = document.getElementById("headline");
-          if (el) el.innerHTML = headlineHTML;
-        });
-    </script>
-        
-        
+   
 </head>
 <body class="bg-gray-950 text-gray-100 antialiased leading-relaxed selection:bg-red-600 selection:text-white">
 
@@ -152,6 +134,20 @@
                 Stop Guessing.<br>
                 Start <span class="text-red-600 text-glow">Transforming.</span>
             </h1>
+            <!-- Adding JS to swap variations -->
+            <script>
+                window.growthbook_queue = window.growthbook_queue || [];
+                window.growthbook_queue.push((gb) => {
+                  const defaultHeadline =
+                    "Stop Guessing.<br>Start <span class=\"text-red-600 text-glow\">Transforming.</span>";
+                
+                  const headlineHTML = gb.getFeatureValue("headline_test1", defaultHeadline);
+                
+                  const el = document.getElementById("headline");
+                  if (el) el.innerHTML = headlineHTML;
+                });
+            </script>
+
             <p class="text-lg md:text-2xl text-gray-300 mb-8 md:mb-10 max-w-2xl mx-auto font-light leading-normal">
                 The no-BS blueprint to building a respected physique, mastering your diet, and unlocking masculine confidence in 90 days.
             </p>
